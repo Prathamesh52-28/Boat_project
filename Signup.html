@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boAt-Signup</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+
+
+
+#header{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 20px 0px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 9999;
+        
+        height: 45px;
+        background-color: white;
+        box-shadow: rgba(40, 40, 40, 0.1) 0px 20px 20px -10px;
+    }
+    
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .nitems{
+      font-weight: bolder;
+    }
+    
+    .items{
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      padding: 40px;
+      justify-content: space-around;
+      gap: 50px;
+      cursor: pointer;
+    
+    }
+    .items>div{
+      text-align: center;
+      margin: auto;
+    }
+    .items>div img{
+      width: 70px;
+    }
+    .mouse{
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      font-size: 16px;
+    }
+    .curser{
+      width: 80%;
+      padding: 40px;
+      margin: auto;
+    margin-left: 20px;
+      display: none;
+      cursor: pointer;
+    position: absolute;
+      grid-template-columns: repeat(4,1fr);
+      justify-content: space-around;
+    
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
+    .curser>div{
+      margin: auto;
+      text-align: center;
+    }
+    
+    .search>input{
+      border-radius: 23px;
+      padding: 0 30px;
+      border: none;
+      background-color: #f7f4f4;
+    }
+    
+    .line{
+        border: 0.01px solid black;
+        border-color: rgb(230, 230, 230);
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    .category{
+        display: flex;
+        gap: 30px;
+        cursor: pointer;
+    }
+    .search{
+        display: flex;
+        /* margin-right: 40px; */
+        gap: 30px;
+    }
+    .logo{
+        margin-left: 40px;
+    } 
+
+
+
+
+
+
+ /*Signup Css*/
+  #signup {
+   margin-top: 15px;
+   border: 2px solid white;
+ }
+
+ #container {
+   display: grid;
+   width: 36%;
+   margin: auto;
+   margin-top: 40px;
+   padding: 20px;
+   text-align: center;
+ }
+
+ #image>img {
+   margin-left: 30%;
+ }
+
+ #image {
+   display: flex;
+   width: 20%;
+   width: 40px;
+   height: 40px;
+   margin: auto;
+   justify-content: center;
+ }
+
+ #container>form>input {
+   width: 100%;
+   margin: auto;
+   margin: 10px 0px;
+   height: 30px;
+   border: 1px solid rgb(219, 219, 219);
+   border-radius: 25px;
+   font-size: 15px;
+   padding: 10px 10px 10px 20px;
+ }
+
+ #container>h1 {
+   text-align: center;
+   font-size: 38px;
+ }
+
+ input:hover{
+  background-color: rgb(209, 244, 244);
+ }
+
+ #container>p {
+   width: 100%;
+   font-size: 16px;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 50px;
+ }
+
+ #container>form>#button {
+   width: 100%;
+   margin: auto;
+   height: 50px;
+   margin-top: 20px;
+   padding: 6px;
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   background-color: red;
+   border: none;
+   border-radius: 5px;
+   text-align: center;
+ }
+
+ #button{
+  cursor: pointer;
+ }
+
+ #container>#form>p {
+   width: 100%;
+   font-size: 16px;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 40px;
+ }
+
+ #container{
+  box-sizing: border-box;
+ }
+
+
+/*Footer*/
+
+#footer1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    #footer1 p{
+      font-size: 13px;
+      color: rgb(158, 157, 157);
+    }
+    
+    .vLine{
+      border: 1px solid rgb(230, 230, 230);;
+      width: 0px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .oddL{
+      margin-top: 50px;
+      margin-bottom: 120px;
+      margin-right: -40px;
+    }
+    .oddL2{
+      margin-top: 50px;
+      margin-bottom: 180px;
+      margin-right: -40px; 
+    }
+    .blackBack{
+      margin-top: 40px;
+      background-color: black;
+      
+    }
+    .blackBack p{
+      color: white;
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      padding: 21px 0;
+      font-size: 14px;
+    }
+    .socialMedia{
+      display: flex;
+      gap: 30px;
+      font-size: 25px;
+    }
+    .playStore{
+      display: flex;
+    }
+    .extra{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .extra h3{
+      margin-bottom: 10px;
+    }
+    .line+p{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .emailSubmit{
+      border: 1px solid red;
+      padding: 6px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .emailSubmit>button{
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 17px;
+      padding: 10px 25px;
+      background-color: rgb(220, 24, 37);
+    }
+    .emailSubmit>input{
+      border: none;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    
+    .search p>a{
+      color: black;
+    }
+
+</style>
+</head>
+
+
+<body>
+
+    <div id="navbar">
+        <div id="header">
+            <div class="logo">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5_small.png?v=1661838672" alt="">
+            </div>
+            <div class="category">
+                <p> <button class="mouse">CATEGORIES</button></p>
+                <p>OFFER ZONE</p>
+                <p>MORE</p>
+            </div>
+            <div class="search">
+                <input type="search" placeholder='Enter Product Name Here'>
+                
+                <p><a href="signup.html"> <i class="fa-solid fa-user"></i></p></a>
+                <p><i class="fa-solid fa-headset"></i></p>
+                <p><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="nitems"></span></p></a>
+            </div>
+        </div>
+
+    <div id="signup">
+        <div id="container">
+          <h1>Register</h1>
+          <P>Please fill in the fields below:</P>
+          <form id="form">
+    
+            <input id="firstname" type="text" placeholder="First name" required>
+            <input id="lastname" type="text" placeholder="Last name" required>
+            <input id="email" type="Email" placeholder="E-mail" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <input id="button" type="submit" placeholder="CREATE ACCOUNT" value="CREATE ACCOUNT">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </form>
+        </div>
+      </div>
+
+
+<!--Footer-->
+
+      <div class="blackBack">
+        <p>
+          India's fastest growing audio & wearables brand. The most incredible 
+        range of wireless earphones, earbuds, headphones,
+        smart watches, and home audio. From workouts to adventures, 
+        boAt will get you sailing!
+        </p>
+      </div>
+
+  
+      <div id="footer1">
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5.png?v=1661838672" alt="">
+          <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+          <div class="emailSubmit">
+            <input type="email" placeholder="Email Address">
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        
+        <div>
+          <h3>SHOP</h3>
+          <p>True Wireless Earbuds</p>
+          <p>Wired Headphones</p>
+          <p>Home Audio</p>
+          <p>Smart Watches</p>
+          <p>Misfit</p>
+          <p>Rock in India</p>
+        </div>
+        <div class="vLine oddL"></div>
+        <div>
+          <h3> </h3><br>
+          <p>Wireless Headphones</p>
+          <p>Wireless Speakers</p>
+          <p>Mobile Accessories</p>
+          <p>TRebel</p>
+          <p>Gift Card</p>
+          <p>Earn Rs. 100</p>
+        </div>
+        <div class="vLine"></div>
+        <div>
+          <h3>HELP</h3>
+          <p>Track your order</p>
+          <p>Return policy</p>
+          <p>Bulk order</p>
+          <p>Why buy direct</p>
+        </div>
+        <div class="vLine oddL2"></div>
+        <div>
+          <h3></h3><br>
+          <p>Warranty & Support</p>
+          <p>Service Centers</p>
+          <p>FAQs</p>
+        </div>
+        <div class="vLine"></div>
+        <div>
+          <h3>COMPANY</h3>
+          <p>About boAt</p>
+          <p>News</p>
+          <p>Read Our Blog</p>
+          <p>Careers</p>
+          <p>Security</p>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>Investor Relations</p>
+          <p>Social Responsibility</p>
+          <p>Warranty Policy</p>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="socialMedia">
+        <p><i class="fa-brands fa-facebook-f"></i></p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        <p><i class="fa-brands fa-instagram"></i></p>
+        <p><i class="fa-brands fa-youtube"></i></p>
+        <p><i class="fa-brands fa-linkedin-in"></i></p>
+      </div>
+      <div class="line"></div>
+      <div class="extra">
+        <div>
+          <h3>Download the App</h3>
+          <div class="playStore">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293" alt="">
+          </div>
+        </div>
+        <div>
+          <h3>We Accept</h3>
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054" alt="">
+        </div>
+      </div>
+      <div class="line"></div>
+      <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p><br>
+      
+  </body>
+  </html>
+
+  <script>
+    function displayData() {
+    var keep = document.querySelector(".curser")
+    keep.style.display = "grid";
+    keep.style.background = "white";
+    document.querySelector("body").addEventListener("mouseleave", removeData)
+}
+document.querySelector(".mouse").addEventListener("mouseover", displayData)
+
+function removeData() {
+    var keep = document.querySelector(".curser")
+    keep.style.display = "none";
+}
+document.querySelector("body").addEventListener("mouseleave", removeData)
+
+
+document.querySelector("form").addEventListener("submit", create)
+
+let userData = JSON.parse(localStorage.getItem("userobj")) || []
+
+function create() {
+    event.preventDefault();
+    let userobj = {
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+    }
+    var flag = true;
+    userData.map(function (el) {
+        if (el.email == userobj.email) {
+            console.log("an");
+            flag = false;
+            alert("Account already exists")
+        }
+    });
+    if (flag) {
+        userData.push(userobj);
+        localStorage.setItem("userobj", JSON.stringify(userData))
+        alert("account created successfully")
+        location.href = "login.html"
+    }
+    document.getElementById("firstname").value = ""
+    document.getElementById("lastname").value = ""
+    document.getElementById("email").value = ""
+    document.getElementById("password").value = ""
+}
+
+var cartItems = JSON.parse(localStorage.getItem("cart")) || []
+var items = cartItems.length
+console.log(items)
+if (items > 0) {
+    document.querySelector(".nitems").innerText = items
+}
+  </script>
+  
