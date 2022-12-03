@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#carticon {
+    margin-left: 15px;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 20px;
+    background-color: rgb(250, 246, 246);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#main1 {
+    width: 60%;
+    background-color: white;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#image {
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+
+    height: 50px;
+}
+
+#continue:hover{
+    background-color: rgb(1, 65, 65);
+
+}
+
+#image>img {
+    width: 70px;
+    height: 30px;
+}
+
+#address {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#addnew {
+    font-size: 16px;
+    padding: 0;
+}
+
+#fields {
+    font-size: 10px;
+    padding: 0;
+    margin-top: 18px;
+}
+
+#hr {
+    color: grey;
+    width: 95%;
+}
+
+#fill {
+    width: 90%;
+    margin-left: 5px;
+    margin-top: -15px;
+    color: grey;
+}
+
+#information {
+    overflow-y: scroll;
+    width: 95%;
+    height: 170px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#first {
+    width: 48%;
+    margin: auto;
+}
+
+#first>label {
+    width: 90%;
+    color: grey;
+    font-size: 14px;
+}
+
+#first>input {
+    width: 90%;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 5px;
+    height: 25px;
+}
+
+#fulladdress {
+    width: 98%;
+    margin: auto;
+}
+
+#fulladdress>label {
+    color: grey;
+    width: 90%;
+    font-size: 14px;
+}
+
+#fulladdress>input {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+#button {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#continue {
+    width: 100%;
+    color: white;
+    height: 60px;
+    background-color:red;
+    border-radius: 10px;
+    padding: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#condition {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-top: 50px;
+    color: grey;
+}
+
+#main2 {
+    width: 36%;
+    margin: 10px 0px;
+    margin-left: 2%;
+}
+
+button:hover{
+    background-color: rgb(1, 65, 65);
+    cursor: pointer;
+}
+
+#carticon {
+    margin-top: 15px;
+}
+
+#order {
+    display: flex;
+    gap: 30px;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 0.5;
+}
+
+#order img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    height: 120px;
+    margin-top: -5px;
+}
+
+#details {
+    width: 50%;
+    margin-top: -5px;
+}
+
+#ordredetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#textdetailes {
+    text-align: end;
+    margin-right: 10px;
+
+}
+
+#text, #textdetaile {
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-right: 10px;
+
+}
+
+#productdetails {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#discount {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+#discount>img {
+    width: 40px;
+    height: 40px;
+}
+
+#discount>input {
+    padding: 5px;
+    width: 75%;
+    margin: auto;
+    border: 2px dashed black;
+    border-radius: 15px;
+    height: 25px;
+    background-color: rgb(241, 234, 234);
+}
+
+#apply {
+    width: 100%;
+    color: white;
+    height: 60px;
+    background-color:red;
+    border-radius: 10px;
+    padding: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="main1">
+            <div id="image">
+                <img src="https://cdn.gokwik.co/merchant/155/logo1632914610996.jpeg" 
+              alt="boat">
+            </div>
+
+            <div id="address">
+                <div><p id="addnew">Add New Address</p></div>
+                <div><p id="fields">* Mandatory Fields</p></div>
+                
+            </div>
+
+            <hr id="hr">
+
+            <div id="information">
+
+                <div id="fill">
+                    <p>Please fill the form :-</p>
+                </div>
+                
+                <div id="first">
+                    <label id="mobile" for="">Mobile no*.</label><br>
+                    <input id="nuber" type="number"><br>
+                    <label id="fullname" for="">Full Name *</label><br>
+                    <input id="name" type="text" required><br>
+                    <label id="city" for="">City*</label><br>
+                    <input id="cityinput" type="text" required><br>
+                </div>
+                <div id="first">
+                    <label id="email" for="">Pincode*</label><br>
+                    <input id="mail" type="text"><br>
+                    <label id="pincode" for="">E-mail*</label><br>
+                    <input id="pin" type="email"><br>
+                    <label id="state" for="">State*</label><br>
+                    <input id="stateinput" type="text" required><br>
+                </div>
+
+                <div id="fulladdress">
+                    <label id="fulladdr" for="">Full Address*</label><br>
+                    <input id="alladdress" type="text" >
+                </div>
+                
+            </div>
+
+            <div id="button"> 
+                <a href="payment.html"><button id="continue">Continue</button></a>
+            </div>
+            <p id="condition">T&C | Privacy | 991899db</p>
+            
+        </div>
+        <div id="main2">
+
+            <div id="product">
+                <div id="productdetails">
+
+                    <div id="ordersummary">
+                        <p><i  id="carticon" class="fa fa-shopping-cart"></i> Order Summary</p>
+                    </div>
+
+                    <div id="order">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_5_600x.png?v=1655534211"
+                         alt="product">
+
+                    </div>
+                    <div id="ordredetails">
+                        <div id="text">
+                            <p>Subtotal</p>
+                            <p>Coupon Discount</p>
+                            <p>Shipping</p>
+                        </div>
+
+                        <div id="textdetailes">
+                            <p class="totalPrice" ></p>
+                            <p class="cd"></p>
+                            <p>Free</p>
+                        </div>
+                        <hr id="hr">
+                    </div>
+                        <div id="ordredetails">
+                            <h4 id="text">Total Amount </h4>
+                            <h4 id="textdetaile"></h4>
+                        </div>
+            </div>
+        </div>
+
+            <div id="discount">
+                <img src="https://pdp.gokwik.co/assets/icons/coupon-discount.svg" alt="">
+                <input id="code" type="text" placeholder="Discount code" >
+            </div>
+
+            <div id="apply">
+                <button id="apply">Apply</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>
+
+<script>
+
+var tp = 0
+var allitems = JSON.parse(localStorage.getItem("cart")) || []
+function totalPrice(){
+    var tprice = allitems.reduce(function(acc,elem){
+        return acc + +(elem.price*elem.qty)
+    },0)
+    tp = tprice
+    console.log(tprice)
+    document.querySelector(".totalPrice").innerHTML = "₹"+ tprice
+    document.querySelector("#textdetaile").innerHTML = "₹" + tprice
+    document.querySelector(".cd").innerHTML = 0
+    localStorage.setItem("dPrice",tprice)
+}
+totalPrice()
+
+document.getElementById("apply").addEventListener("click",coupenApply)
+function coupenApply(){
+    
+    if(document.getElementById("code").value != "masai123")
+    {
+        alert("coupen is not valid")
+    }
+    else{
+        alert("Coupen Apply | Congratulations!! you get 20% off")
+        var discPrice = parseInt(tp* 0.8) 
+        var savingprice = parseInt(tp*0.2)
+        document.querySelector(".totalPrice").innerHTML = "₹"+ tp
+        document.getElementById("textdetaile").innerHTML = "₹"+ discPrice
+        document.querySelector(".cd").innerHTML = "20% OFF (You save ₹"  + savingprice + ")"
+        document.getElementById("code").value = ""
+        discountPrice = discPrice
+        localStorage.setItem("dPrice",discPrice)
+
+    }
+}
+
+</script>
