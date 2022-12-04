@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watches</title>
+    <!-- Linked css sheet -->
+    <link rel="stylesheet" href="Prodstyle.css">
+
+    <!-- CSS StyleSheets -->          
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <a href="index.html"><img class="logo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5_small_a89089b1-2cee-4487-8d84-1dd4e7e6f6cc_small.png?v=1665162180"
+            alt="BOAT"></a>
+            <nav class="nav_bar">
+            <ul>
+                <li><a class="nav_bar_hover" href="">CATEGORIES &nbsp;</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a class="nav_bar_hover" href="">DAILY DEALS</a></li>
+                <li><a class="nav_bar_hover" href="">MORE &nbsp;</a><i class="fa-solid fa-chevron-down"></i></li>
+            </ul>
+            </nav> 
+            <div>
+            <div class="input-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="input_field" type="text"  placeholder="Search Products">    
+            </div>
+            <div class="icons">
+                <p><a href="signup.html"> <i class="fa-solid fa-user"></i></p></a>
+                <p><i class="fa-solid fa-headset"></i></p>
+                <p><a href="shopCart.html"><i class="fa-solid fa-cart-shopping"></i><span class="nitems"></span></p></a>
+            </div>
+            
+            </div>      
+    </header>
+    <!-- Products page -->
+    <div>
+    <div>
+        <p style="margin: 100px 63px 20px 63px;"><span style="color:grey">Home . </span>Smart watches</p>
+        <h1 class="heading1">Smart Watches</h1>
+        <div id="filSort">
+            <select id="filter">
+                <option>Show filters</option>
+                <option>Availability</option>
+                <option>Price</option>
+            </select>
+            <select onchange ="sortFun()" id="sort">
+                <option>Sort by Featured</option>
+                <option>Price, low to high</option>
+                <option>Price, high to low</option>
+                <option>Alphabetically, A-Z</option>
+                <option>Alphabetically, Z-A</option>
+            </select>
+        </div>
+    </div>
+    <div id="main">
+        <div id="parent">  
+        </div>
+    </div>
+    <!-- Explanation -->
+    <div class="explanation">
+        <h1> Best Smart Watches for Men & Women - India's No. 1 Wearable Watch Brand </h1>
+        <div class="pp">
+        <p>In this fast-moving era, let the best smart watches keep at pace with you. That is right! boAt smartwatches are here for you, whether you want to exercise or rest. Our smartwatches are equipped with multiple active sports modes, like cycling, workout, running, walking, climbing, and others — making staying fit easy. Not just physical fitness, the supreme smartwatches from boAt also help you keep a check on your mental health with guided meditation.</p>
+        <p>These best of best smart watches will also help you stay connected at all times with smart notifications for texts, calls, reminders, and alarms. Enjoy remote music and camera control from your fitness watch. In the field of wearables, boAt also came up with the best smart watches for women — Watch Storm being one of them. It is the perfect companion for your fitness transformation. Storm smart watch is here to remove all obstructions that may come on your goal-achieving path. With its daily activity tracker and nine different sports modes, it will now be fun to track your fitness journey. Why does it fall under smart watches for women? This fitness smartwatch comes with a menstrual cycle tracking feature that allows you to stay on top of your periods cycle, and log in your physical and emotional symptoms. Its battery life of up to 10 days will keep you alert at all times with smart notifications from your phone and vibration alerts for calls, texts, schedule reminders, alarms, & more!</p>
+        <p>boAt’s smart watch Enigma is a sleek fitness smartwatch loaded with features that truly makes it the smart watch of our times. It fits the bill for being the best smart watches for men as it comes with smart gestures which allow you to remotely control your camera, watch faces, and more! Why is it one of the best smartwatch? Enigma comes with Find My Phone feature that will call your phone to easily locate your phone when you don’t remember where you kept it. Its 3 ATM water resistance will keep it safe from splashes & sweat too, making it top the list of best smart watches for men & women.</p>
+        <p>We at boAt are rooting for you and cheering the loudest for you to live a better life and get smarter with every move you make! So we designed smartwatches that are especially curated to match your stride. boAt’s smart watch price will never hurt your pocket. Get notification alerts and stay fit with the best fitness companion out there for you. Find a caring partner in boAt smartwatches that monitors your heart rate and blood oxygen SpO2 level 24*7 – even while you’re asleep. Flaunt and flash as the best smartwatches for fitness not only accompany you in your vigorous workout but also help you keep calm with guided meditation! So what are you waiting for? Live smarter with the best smart watches in town! Be the GOAT with boAt.</p>
+       
+    </div>
+    </div>
+   <!-- Bottom Section/ -->
+    <div class="bottom">
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/sd.jpg?v=1659088152">
+            </div>
+            <p id="read">Check out the boAt Best Earphnone Under 100</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/blog1.jpg?v=1652187095">
+            </div>
+            <p id="read">Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/500-ANC-BLOG.jpg?v=1650967056">
+            </div>
+            <p id="read">Airdopes 500 ANC and a Cancel Culture You Can Get Behind</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+        <div class="bottom1">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/Decoding-Active-Noise-Cancellation-1_2.jpg?v=1648622557">
+        </div>
+            <p id="read">How Noise Cancelling Headphones and Earphones Empower You To Listen To What Matters</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/noise_cancellation.jpg?v=1635923382">
+            </div>
+            <p id="read">What is Active Noise Cancellation and Why is it Important?</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div id="border-box">
+            <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!</p>
+        </div>
+        <div id="footer1">
+            <div class ="subsDiv">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5.png?v=1661838672" alt="">
+            <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+            <div class="emailSubmit">
+                <input type="email" placeholder="Email Address">
+                <button>SUBSCRIBE</button>
+            </div>
+            </div>
+            
+            <div class="varieties">
+            <h3>SHOP</h3>
+            <p>True Wireless Earbuds</p>
+            <p>Wired Headphones</p>
+            <p>Home Audio</p>
+            <p>Smart Watches</p>
+            <p>Misfit</p>
+            <p>Rock in India</p>
+            </div>
+            <div class="vLine oddL"></div>
+            <div class="varieties">
+            <h3> </h3><br>
+            <p>Wireless Headphones</p>
+            <p>Wireless Speakers</p>
+            <p>Mobile Accessories</p>
+            <p>TRebel</p>
+            <p>Gift Card</p>
+            <p>Earn Rs. 100</p>
+            </div>
+            <div class="vLine"></div>
+            <div class="varieties">
+            <h3>HELP</h3>
+            <p>Track your order</p>
+            <p>Return policy</p>
+            <p>Bulk order</p>
+            <p>Why buy direct</p>
+            </div>
+            <div class="vLine oddL2"></div>
+            <div class="varieties">
+            <h3></h3><br>
+            <p>Warranty & Support</p>
+            <p>Service Centers</p>
+            <p>FAQs</p>
+            </div>
+            <div class="vLine"></div>
+            <div class="varieties">
+            <h3>COMPANY</h3>
+            <p>About boAt</p>
+            <p>News</p>
+            <p>Read Our Blog</p>
+            <p>Careers</p>
+            <p>Security</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Investor Relations</p>
+            <p>Social Responsibility</p>
+            <p>Warranty Policy</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class= "footLine"><hr/></div>
+        <div class="socialMedia">
+            <p><i class="fa-brands fa-facebook-f"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-youtube"></i></p>
+            <p><i class="fa-brands fa-linkedin-in"></i></p>
+        </div>
+        <div class= "footLine"><hr/></div>
+        <div class="line"></div>
+        <div class="extra">
+            <div>
+            <h3 style="font-size:18px">Download the App</h3>
+            <div class="playStore">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293" alt="">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293" alt="">
+            </div>
+            </div>
+            <div class="paymtOp">
+            <h3 style="font-size:18px">We Accept</h3>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054" alt="">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class= "footLine"><hr/></div>
+        <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p><br>
+    </footer>
+</div>
+</body>
+</html>
+<script src="product2.js"> </script>

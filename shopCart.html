@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boAt-Cart Page</title>
+  <!-- Styles -->
+  <style>     
+      #header{
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      padding: 20px 0px;
+      position: fixed;
+      top: 0;
+      right: 0px;
+      left: 0px;
+      z-index: 9999;
+      width: 100%;
+      height: 45px;
+      background-color: white;
+      box-shadow: rgba(40, 40, 40, 0.1) 0px 20px 20px -10px;
+      }
+
+      *{
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .mouse{
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      font-size: 16px;
+      }
+
+      .curser{
+      width: 80%;
+      /* padding: 40px; */
+      margin: auto;
+      margin-top: 80px;
+      display: none;
+      cursor: pointer;
+      grid-template-columns: repeat(4,1fr);
+      justify-content: space-around;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      }
+      .curser>div{
+      margin: auto;
+      text-align: center;
+      }
+
+      .search>input{
+      border-radius: 23px;
+      padding: 0 30px;
+      border: none;
+      background-color: #f7f4f4;
+      }
+
+      .category{
+      display: flex;
+      gap: 30px;
+      }
+      
+      .search{
+      display: flex;
+      /* margin-right: 40px; */
+      gap: 30px;
+      }
+
+
+      /*                   CART CSS                            */
+
+      body{
+        margin: auto;
+        background-color: rgb(245, 245, 245);
+      }
+
+      .cartItem{
+        background-color: black;
+        color: white;
+        top: 70px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        margin: auto;
+
+      }
+      
+      #cart{
+        display: flex;
+        width: 40%;
+        background-color: white;
+        padding: 10px;
+        padding-left: 70px;
+        border-radius: 18px;
+        border: 2px solid black;
+        margin: 20px 30px;
+        margin-left: 120px;
+        align-items: center;
+        gap: 120px;
+      }
+
+      #par{
+        margin-top: 200px;
+      }
+
+      .sideSection{
+        display: flex;
+        position: fixed;
+        gap: 60px;
+        width: 30%;
+        background-color: white;
+        border-radius: 18px;
+        padding: 25px;
+        top: 200px;
+        left: 970px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      }
+
+      #cart img{
+        width: 150px;
+        background-color: rgb(245, 245, 245);
+        /* box-shadow: rgb(255,0,0) 0px 0px 0px 2px; */
+        border-radius: 5px;
+      }
+
+      .proDetails >p{
+        font-weight:bold;
+        color:rgb(255,0,0);
+      }
+      .quantDiv{
+        display: flex;
+        width: 170px;
+        justify-content: space-between;
+      }
+      .quantDiv>button{
+        border: 1px solid black;
+        padding: 0px 20px;
+        background-color: white;
+        color: rgb(255, 0, 0);  ;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      .quantDiv>h3{
+        color: black;
+      }
+      
+      .rmvBtn{
+        border: none;
+        background-color: black;
+        margin: auto;
+        color:white;
+        border-radius: 4px;
+        padding: 8px 36px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      .proceed{
+        position: fixed;
+        padding: 18px 48px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background-color: rgb(255,0,0);
+        top:  580px;
+        left: 1120px;
+        font-size: 23px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+
+      .contiBtn{
+        position: fixed;
+        padding: 20px 20px;
+        border: none;
+        border-radius: 8px;
+        color:  rgb(255,0,0);
+        background-color: rgb(245, 245, 245);
+        top:  500px;
+        left: 1100px;
+        font-size: 23px;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar">
+      <div id="header">
+        <div class="logo">
+        <a href ="index.html"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5_small.png?v=1661838672" alt=""></a>
+            </div>
+            <div class="category">
+                <p> <button class="mouse">CATEGORIES</button></p><i class="fa-solid fa-chevron-down"></i>
+                <p>DAILY DEALS</p>
+                <p>MORE</p><i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="search">
+                <input type="search" placeholder='Search Products'>
+                <p><i class="fa-solid fa-user"></i></p>
+                <p><i class="fa-solid fa-headset"></i></p>
+                <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </div>
+        </div>
+        <div class="curser">
+        </div>
+    </div>
+      <div class="cartItem">
+        <h1 class="discription">Items In Your Cart</h1>
+      </div>
+      
+        <div id="par"></div>
+        
+        </div>
+    <div class="sideSection">
+      <div >
+        <h2>Price Details</h2>
+        <p class="totalItems"></p>
+        <p>Discount :</p>
+        <p>Shipping Charges :</p>
+        <!-- <hr style="width:100%"> -->
+        <h3>Total Amount : </h3>
+      </div>
+      <div>
+        <br>
+        <br>
+        <br>
+        <p class= "totalAmt"></p>
+        <p class="discount"></p>
+        <p class="charges" style="color: green;">FREE</p>
+        <!-- prodd
+          <hr style="width:100%"> -->
+        <p class="pay" style="font-weight: bold;"></p>
+      </div> 
+    </div>
+    <a href="index.html"><button class="contiBtn">Continue Shopping ></button></a>
+    <a href="payment.html"><button class="proceed">Place Order</button></a>
+</body>
+</html>
+
+<!-- Cart -->
+<script src="https://kit.fontawesome.com/0ed43cb816.js" crossorigin="anonymous"></script>
+<script>
+
+  function displayData(){
+    var place = document.querySelector(".curser")
+    place.style.display = "grid";
+    place.style.background = "white";
+    document.querySelector(".mouse").addEventListener("mouseleave",removeData)
+  }
+  document.querySelector(".mouse").addEventListener("mouseover",displayData)
+  
+  function removeData(){
+    var place = document.querySelector(".curser")
+    place.style.display = "none";
+  }
+  document.querySelector(".mouse").addEventListener("mouseleave",removeData)
+
+  var product = JSON.parse(localStorage.getItem("cart")) || []
+  check()
+
+  function check(){
+    if(product.length === 0)
+    {
+      document.querySelector(".discription").textContent = "Your Cart is Empty. Add some items to Cart"
+      displayprod()
+      document.querySelector(".totalItems").textContent =  "Price"
+      document.querySelector(".totalAmt").textContent = 0
+      document.querySelector(".discount").textContent = 0
+      document.querySelector(".pay").textContent = 0
+      document.querySelector(".charges").textContent = "0"
+      document.querySelector(".proceed").innerHTML = ""
+      document.querySelector(".proceed").style.background = "white"
+      document.querySelector(".proceed").style.border = "none"
+
+    }
+    else{
+      displayprod()
+      totalAmount()
+    }
+  }
+
+  console.log(product)
+
+//For Displaying 
+  function displayprod(){
+    document.getElementById("par").textContent = ""
+    product.map(function(elem,i){    
+      var div = document.createElement("div");
+      
+      var image = document.createElement("img")
+      image.setAttribute("src",elem.img_link)
+
+      var name = document.createElement("h2")
+      name.textContent = elem.name
+
+      var price = document.createElement("p")
+      price.textContent = "Price: ₹ "+ elem.price
+
+      var quant = document.createElement("h3")
+      quant.textContent = elem.qty
+
+      var plus = document.createElement("button")
+      plus.innerHTML = '<i class="fa-solid fa-plus"></i>';
+      plus.style.fontSize = "19px";
+
+      var minus = document.createElement("button")
+      minus.innerHTML = '<i class="fa-solid fa-minus"></i>';
+      minus.style.fontSize = "19px";
+
+      var btn = document.createElement("button")
+      btn.textContent = "Remove Product"
+      btn.setAttribute("class","rmvBtn")
+
+      quantdiv = document.createElement("div")
+      quantdiv.setAttribute("class","quantDiv")
+      quantdiv.append(plus,quant,minus)
+
+      var cartp = document.createElement("div")
+      cartp.setAttribute("id","cart")
+
+      var div2 = document.createElement("div")
+      div2.setAttribute("class","proDetails");
+
+      div.append(image)
+      div2.append(name,price,quantdiv,btn)
+      cartp.append(div,div2)
+
+      document.getElementById("par").append(cartp)
+
+      plus.addEventListener("click",function(){addItem(i)})
+      minus.addEventListener("click",function(){substractItem(i)})
+      btn.addEventListener("click",function(){deleterow(i)})
+    })
+  }
+
+
+  // Total Amount
+  function totalAmount(){
+        
+        var total = product.reduce(function(acc,elem){
+          console.log(acc)
+            return acc + +(elem.strikedoffprice*elem.qty)
+        },0)
+
+        var totalPrice = product.reduce(function(acc,elem){
+            return acc + +(elem.price*elem.qty)
+        },0)
+        console.log(total)
+        var discount = +total - +totalPrice
+        
+        var saving = parseInt((discount/total)*100);
+       
+        
+        var tQuantity = product.length
+
+        document.querySelector(".totalItems").textContent = "Price(" + +tQuantity + " items)"
+
+        document.querySelector(".totalAmt").textContent = total
+
+        document.querySelector(".discount").textContent = +discount + " (you save: " + saving + "%)"
+
+        document.querySelector(".pay").textContent = totalPrice
+    }
+
+  function substractItem(index){
+    if(product[index].qty>1){
+      product[index].qty--
+      localStorage.setItem("cart",JSON.stringify(product))
+      check()
+    }
+  }
+
+  function addItem(index){
+    product[index].qty++
+    localStorage.setItem("cart",JSON.stringify(product))
+    check()
+  }
+
+  function deleterow(index){
+    product.splice(index,1)
+    localStorage.setItem("cart",JSON.stringify(product))
+
+    check()
+  }
+
+</script>
