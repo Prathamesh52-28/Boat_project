@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockerz Headphones</title>
+    <!-- Linked css sheet -->
+    <link rel="stylesheet" href="Prodstyle.css">
+
+    <!-- CSS StyleSheets -->          
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <a href="index.html"><img class="logo" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5_small_a89089b1-2cee-4487-8d84-1dd4e7e6f6cc_small.png?v=1665162180"
+     alt="BOAT"></a>
+     <nav class="nav_bar">
+        <ul>
+            <li><a class="nav_bar_hover" href="">CATEGORIES &nbsp;</a><i class="fa-solid fa-chevron-down"></i></li>
+            <li><a class="nav_bar_hover" href="">DAILY DEALS</a></li>
+            <li><a class="nav_bar_hover" href="">MORE &nbsp;</a><i class="fa-solid fa-chevron-down"></i></li>
+        </ul>
+     </nav> 
+     <div>
+        <div class="input-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="input_field" type="text"  placeholder="Search Products">    
+        </div>
+       <div class="icons">
+            <p><a href="signup.html"> <i class="fa-solid fa-user"></i></p></a>
+            <p><i class="fa-solid fa-headset"></i></p>
+            <p><a href="shopCart.html"><i class="fa-solid fa-cart-shopping"></i><span class="nitems"></span></p></a>
+        </div>
+        
+     </div>      
+    </header>
+
+    <!-- Products Page -->
+    <div>
+    <div>
+        <p style="margin: 100px 63px 20px 63px;"><span style="color:grey">Home . </span>Rockerz Headphones</p>
+        <h1 class="heading1">Rockerz Headphones</h1>
+        <div id="filSort">
+            <select id="filter">
+                <option>Show filters</option>
+                <option>Availability</option>
+                <option>Price</option>
+            </select>
+            <select onchange ="sortFun()" id="sort">
+                <option>Sort by Featured</option>
+                <option>Price, low to high</option>
+                <option>Price, high to low</option>
+                <option>Alphabetically, A-Z</option>
+                <option>Alphabetically, Z-A</option>
+            </select>
+        </div>
+    </div>
+    <!-- Products List -->
+    <div id="main">
+        <div id="parent">  
+        </div>
+    </div>
+    <!-- Explanation -->
+    <div class="explanation">
+        <h1>Best Headphones - The Top Rated Headphones in the Market </h1>
+        <div class="pp">
+        <p>Headphones offer the most incredible listening experience with revolutionary design. Truly in ear wireless with no cables, no connectors, and no hassles. Designed for comfort and unstoppable music, always remain on your toes as Headphones brings to you the dopest tech there is out there!</p>
+        <p>Powered with boAt’s Insta Wake n’ Pair™ technology & ASAP™ Fast Charge, these true wireless earbuds power on and connect instantly right out of the charging case. No more going into settings to find and pair the device, welcome to the new era of seamless, instant connection. </p>
+        <p>boAt Headphones come with passive and active noise cancellation technology that cancels out external noise, delivering only the sound of your media to your ears. No longer will there be any interference from external sources. Headphones are designed and perfected for superior calls and entertainment. These wireless earbuds come with massive drivers that deliver superior sound, sound that is unmatched and inimitable.</p>
+        <p>Made from fine and premium materials, these bluetooth earbuds are made to be comfortable and secure. You can choose from a variety of silicone tips provided to adjust accordingly and ensure a supreme and comfortable fit based on how you want your experience to be.</p>
+        <p>Headphones are perfect for WFH calls or meetings. Microphones are placed in key locations on the earbuds that accurately picks up your voice while cancelling out background noise. The result is a clear and crisp voice and a consistent experience. Moreover, with the latest Bluetooth technology, pairing instantly with multiple devices while switching between those devices has never been easier. Simplicity and elegance define Headphones.</p>
+        <p>Style it up with our best earbuds, the new way to flaunt your vibe! From the Queen of Prints, Masaba's funky take on our Headphones 441 wireless earbuds, to our TRebel range of earbuds, only for women - boAt is bringing to you crazy new feats every passing day. Magic and Music are synonymous when you plug in the Headphones earphones!</p>
+    </div>
+    </div>
+   
+    <!-- Bottom Section/ -->
+    <div class="bottom">
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/sd.jpg?v=1659088152">
+            </div>
+            <p id="read">Check out the boAt Best Earphnone Under 100</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/blog1.jpg?v=1652187095">
+            </div>
+            <p id="read">Best Earbuds Under 2000 to Vibe to Your Playlist</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/500-ANC-BLOG.jpg?v=1650967056">
+            </div>
+            <p id="read">Airdopes 500 ANC and a Cancel Culture You Can Get Behind</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+        <div class="bottom1">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/Decoding-Active-Noise-Cancellation-1_2.jpg?v=1648622557">
+        </div>
+            <p id="read">How Noise Cancelling Headphones and Earphones Empower You To Listen To What Matters</p>
+            <button>Read More</button>
+        </div>
+        <div class="mbottom">
+            <div class="bottom1">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/noise_cancellation.jpg?v=1635923382">
+            </div>
+            <p id="read">What is Active Noise Cancellation and Why is it Important?</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+    <div id="border-box">
+        <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds, headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!</p>
+    </div>
+    <div id="footer1">
+        <div class ="subsDiv">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Asset_2_288x-8_5.png?v=1661838672" alt="">
+          <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+          <div class="emailSubmit">
+            <input type="email" placeholder="Email Address">
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        
+        <div class="varieties">
+          <h3>SHOP</h3>
+          <p>True Wireless Earbuds</p>
+          <p>Wired Headphones</p>
+          <p>Home Audio</p>
+          <p>Smart Watches</p>
+          <p>Misfit</p>
+          <p>Rock in India</p>
+        </div>
+        <div class="vLine oddL"></div>
+        <div class="varieties">
+          <h3> </h3><br>
+          <p>Wireless Headphones</p>
+          <p>Wireless Speakers</p>
+          <p>Mobile Accessories</p>
+          <p>TRebel</p>
+          <p>Gift Card</p>
+          <p>Earn Rs. 100</p>
+        </div>
+        <div class="vLine"></div>
+        <div class="varieties">
+          <h3>HELP</h3>
+          <p>Track your order</p>
+          <p>Return policy</p>
+          <p>Bulk order</p>
+          <p>Why buy direct</p>
+        </div>
+        <div class="vLine oddL2"></div>
+        <div class="varieties">
+          <h3></h3><br>
+          <p>Warranty & Support</p>
+          <p>Service Centers</p>
+          <p>FAQs</p>
+        </div>
+        <div class="vLine"></div>
+        <div class="varieties">
+          <h3>COMPANY</h3>
+          <p>About boAt</p>
+          <p>News</p>
+          <p>Read Our Blog</p>
+          <p>Careers</p>
+          <p>Security</p>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>Investor Relations</p>
+          <p>Social Responsibility</p>
+          <p>Warranty Policy</p>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class= "footLine"><hr/></div>
+    <div class="socialMedia">
+        <p><i class="fa-brands fa-facebook-f"></i></p>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        <p><i class="fa-brands fa-instagram"></i></p>
+        <p><i class="fa-brands fa-youtube"></i></p>
+        <p><i class="fa-brands fa-linkedin-in"></i></p>
+      </div>
+      <div class= "footLine"><hr/></div>
+      <div class="line"></div>
+      <div class="extra">
+        <div>
+          <h3 style="font-size:18px">Download the App</h3>
+          <div class="playStore">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293" alt="">
+          </div>
+        </div>
+        <div class="paymtOp">
+          <h3 style="font-size:18px">We Accept</h3>
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054" alt="">
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class= "footLine"><hr/></div>
+      <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p><br>
+    </footer>
+</div>
+</body>
+</html>
+<script src="product1.js"> </script>
