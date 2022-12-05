@@ -152,6 +152,7 @@
  #container>h1 {
    text-align: center;
    font-size: 38px;
+   margin-top: 50px;
  }
 
  input:hover{
@@ -166,7 +167,7 @@
    margin-bottom: 50px;
  }
 
- #container>form>#button {
+ .log{
    width: 100%;
    margin: auto;
    height: 50px;
@@ -306,7 +307,7 @@
             <div class="search">
                 <input type="search" placeholder='Enter Product Name Here'>
                 
-                <p><a href="signup.html"> <i class="fa-solid fa-user"></i></p></a>
+                <p><a href="Signup.html"> <i class="fa-solid fa-user"></i></p></a>
                 <p><i class="fa-solid fa-headset"></i></p>
                 <p><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="nitems"></span></p></a>
             </div>
@@ -328,7 +329,7 @@
           <form id="form">
             <input id="email" type="text" placeholder="E-mail" required>
             <input id="password" type="password" placeholder="Password" required>
-            <input id="button" type="submit" value="LOGIN">
+            <a href="index.html"><button class="log">Login</button></a>
             <p>New customer? <a href="Signup.html">Create an account</a></p>
           </form>
         </div>
@@ -470,7 +471,7 @@ function loginfun() {
     });
     if (validuser) {
         alert("Login successfully");
-        location.href = "homepage.html";
+        location.href = "index.html";
     } else if (usernotallowed) {
         alert("Incorrect email or password.");
         document.getElementById("email").value = "";
