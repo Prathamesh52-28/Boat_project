@@ -66,7 +66,7 @@ AIRDOPES WIRELESS EARBUDS
 
 Here on the Product Page you can select an item and add to Bag. To make your purchase easy We have also added Filter button.
 
-You can filter products on the basis of Newly Arrived Products, Low to High Price & High to Low Price.
+You can filter products on the basis of Low to High Price & High to Low Price product and Alphabeticall order also
 
 ![product page filter1](https://user-images.githubusercontent.com/113714058/205997000-2912dcf9-0dc3-43db-8c02-c50608ddd48c.png)
 
@@ -82,6 +82,6 @@ Now comes the Cart Page, It looks like these after adding products You can also 
 
 Now when you click on "Proceed to Payment" you will be directed to the product page.
 
-Here how it looks like.Payment Page
+Here how it looks like.Payment Page is created by Prathamesh Nimje.
 
 ![payment page](https://user-images.githubusercontent.com/113714058/205997533-fa539eac-63b1-4a65-9fb1-8d4924bf62c6.png)
