@@ -316,12 +316,6 @@ hr {
 /* ///////////////////////////           Navbar                      //////////////////// */
 
 header {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 5%;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
     display: flex;
     justify-content: space-around;
     margin: auto;
