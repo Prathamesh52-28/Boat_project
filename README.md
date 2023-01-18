@@ -1,6 +1,6 @@
 boAt LifeStyle CLONE
 
-Deployed Link-1 :--> https://admirable-cupcake-020fb7.netlify.app/
+Deployed Link-1 :--> https://imaginative-tarsier-6b75ba.netlify.app/
 
 This is an attempt to clone the boAt-Lifestyle website using just HTML,CSS & JavaScript only.
 
