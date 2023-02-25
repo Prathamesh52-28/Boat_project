@@ -16,7 +16,6 @@ We are the team of 3 people.
 
 We've given an project to clone the boAt-Lifestyle website and we've completed this project in one week with the concepts we have learned(like HTML,CSS,JavaScript,DOM-Manipulation etc)
 
-Rahim Laskar and Akshata Ganbote has created the Navbar, footer and the home page of boAt-Lifestyle Website.
 
 ![1](https://user-images.githubusercontent.com/113714058/205993164-83b3db5a-d672-4a4d-a79b-bedc6540fd8b.png)
 
@@ -44,7 +43,7 @@ We have also provided all the additional information in the footer section.
 ![6](https://user-images.githubusercontent.com/113714058/205993948-219a909c-4b44-4382-9c40-049fbe74bc2b.png)
 
 
-Now Comes to Create Account/Login/Forget Password Page,Prathamesh Nimje has created these pages.
+Now Comes to Create Account/Login/Forget Password Page.
 
 Before Ordering Product you have to Create Account and login First.
 
@@ -58,7 +57,7 @@ This is how Login page looks like
 
 ![login](https://user-images.githubusercontent.com/113714058/205995731-4883d781-542b-4a48-801c-10912622ac7d.png)
 
-Now Comes the Product Page, Akshata Ganbote and Prathamesh Nimje has created the product page.
+Now Comes the Product Page.
 
 AIRDOPES WIRELESS EARBUDS
 
@@ -82,6 +81,6 @@ Now comes the Cart Page, It looks like these after adding products You can also 
 
 Now when you click on "Proceed to Payment" you will be directed to the product page.
 
-Here how it looks like.Payment Page is created by Prathamesh Nimje.
+Here how it looks like.
 
 ![payment page](https://user-images.githubusercontent.com/113714058/205997533-fa539eac-63b1-4a65-9fb1-8d4924bf62c6.png)
